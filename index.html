@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- The defer attribute means that the JS file is only gonna execute once the document is loaded & it's gonna avoid any errors with being unable to find HTML elements & so on -->
+    <script src="index.js" defer></script>
+    <title>Reactions</title>
+  </head>
+  <body>
+    <!-- This is gonna be the main container -->
+    <div id="app">
+      <!-- This is gonna be the main square -->
+      <div class="click-area">
+        <!-- This is gonna be the default text when the user first loads the page -->
+        <div class="display-text">Click to start!</div>
+      </div>
+
+      <!-- This is gonna store the scores -->
+      <div class="recent-scores">
+        <div class="score">-</div>
+        <div class="score">-</div>
+        <div class="score">-</div>
+        <div class="score">-</div>
+        <div class="score">-</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* We're gonna be using flex-box to position the columns for the clicking thing & the score */
+#app {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: bold;
+}
+
+/* This is the area the user is gonna click on */
+.click-area {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background: #cc0202;
+  cursor: pointer;
+}
+
+.display-text {
+  padding: 24px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  flex-shrink: 0;
+}
+
+.score {
+  /* This is gonna make sure that every single score takes up the same amount of height & it's also gonna ensure that no space is being left out at the bottom of the column */
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Making sure we have extra space at the edges */
+  padding: 16px;
+}
+
+/* For every 'odd' score, we're gonna change the bg color */
+.score:nth-child(odd) {
+  background: #dcf2ee;
+}
